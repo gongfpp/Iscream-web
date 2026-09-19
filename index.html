@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#353b2e">
+<title>放课后的留白 · 第一章</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#292c24;color:#f4efe0;font-family:"PingFang SC","Noto Sans SC",sans-serif}#canvas{display:block;margin:auto;outline:none}#loading{position:fixed;inset:0;display:flex;align-items:center;background:linear-gradient(90deg,rgba(37,43,32,.90),rgba(40,44,33,.57) 48%,rgba(40,44,33,.15)),url(loading-room.png) center/cover}.copy{margin:0 10%;max-width:550px}.eyebrow{font-size:15px;letter-spacing:.24em;color:#d6d4b8}h1{font-size:clamp(30px,5vw,58px);font-weight:400;letter-spacing:.06em;margin:28px 0 20px}.chapter{font-size:19px;margin-bottom:68px}progress{display:block;appearance:none;width:min(360px,70vw);height:2px;border:0;background:#ffffff25;color:#d6d4b8}progress::-webkit-progress-bar{background:#ffffff25}progress::-webkit-progress-value{background:#d6d4b8}progress::-moz-progress-bar{background:#d6d4b8}#message{font-size:14px;line-height:1.9;min-height:28px;margin-top:18px;color:#e0ddce}button{border:1px solid #e0ddce66;background:#30372b;color:#f4efe0;padding:12px 22px;font:inherit;cursor:pointer;margin-top:12px}button:focus-visible{outline:2px solid #e7e8c5;outline-offset:4px}small{position:absolute;bottom:34px;left:10%;font-size:12px;color:#d1cebfa8}noscript{position:fixed;inset:30%;z-index:4;background:#30372b;padding:24px;line-height:1.8}
+</style>
+
+</head>
+<body>
+<canvas id="canvas" tabindex="0" aria-label="放课后的留白，WASD 移动，Shift 跑步，E 调查，Q 笔记，Tab 手机，Esc 菜单">需要支持游戏画面的浏览器。</canvas>
+<noscript>请启用浏览器的 JavaScript 后重新进入第一章。</noscript>
+<div id="loading"><div class="copy"><div class="eyebrow">神山高校 / 放课后</div><h1>放课后的留白</h1><div class="chapter">第一章 · 报废清单</div><progress id="progress" max="100" value="0" aria-label="游戏加载进度"></progress><p id="message" role="status">正在准备这个下午……</p><button id="retry" hidden onclick="location.reload()">重新进入</button></div><small>《冰菓》非官方同人试玩版 · 建议使用桌面浏览器<span id="build-stamp"></span></small></div>
+<script src="index.js"></script>
+<script>
+const copy={"web.title": "\u653e\u8bfe\u540e\u7684\u7559\u767d \u00b7 \u7b2c\u4e00\u7ae0", "web.canvas_label": "\u653e\u8bfe\u540e\u7684\u7559\u767d\uff0cWASD \u79fb\u52a8\uff0cShift \u8dd1\u6b65\uff0cE \u8c03\u67e5\uff0cQ \u7b14\u8bb0\uff0cTab \u624b\u673a\uff0cEsc \u83dc\u5355", "web.canvas_fallback": "\u9700\u8981\u652f\u6301\u6e38\u620f\u753b\u9762\u7684\u6d4f\u89c8\u5668\u3002", "web.noscript": "\u8bf7\u542f\u7528\u6d4f\u89c8\u5668\u7684 JavaScript \u540e\u91cd\u65b0\u8fdb\u5165\u7b2c\u4e00\u7ae0\u3002", "web.eyebrow": "\u795e\u5c71\u9ad8\u6821 / \u653e\u8bfe\u540e", "web.heading": "\u653e\u8bfe\u540e\u7684\u7559\u767d", "web.chapter": "\u7b2c\u4e00\u7ae0 \u00b7 \u62a5\u5e9f\u6e05\u5355", "web.progress": "\u6e38\u620f\u52a0\u8f7d\u8fdb\u5ea6", "web.preparing": "\u6b63\u5728\u51c6\u5907\u8fd9\u4e2a\u4e0b\u5348\u2026\u2026", "web.retry": "\u91cd\u65b0\u8fdb\u5165", "web.disclaimer": "\u300a\u51b0\u83d3\u300b\u975e\u5b98\u65b9\u540c\u4eba\u8bd5\u73a9\u7248 \u00b7 \u5efa\u8bae\u4f7f\u7528\u684c\u9762\u6d4f\u89c8\u5668", "web.failure": "\u6682\u65f6\u65e0\u6cd5\u6253\u5f00\u6e38\u620f\u3002\u8bf7\u68c0\u67e5\u7f51\u7edc\u4e0e\u6d4f\u89c8\u5668\u7684\u56fe\u5f62\u52a0\u901f\u8bbe\u7f6e\u540e\u91cd\u8bd5\u3002", "web.loading": "\u6b63\u5728\u8f7d\u5165\u753b\u9762\u4e0e\u58f0\u97f3 \u00b7 {percent}%", "web.opening": "\u6b63\u5728\u6253\u5f00\u53e4\u5178\u90e8\u2026\u2026", "web.build_version": "e30edfb \u00b7 2026-09-19 14:45 UTC"};
+window.ISCREAM_VERSION=copy['web.build_version']||'';
+document.getElementById('build-stamp').textContent=window.ISCREAM_VERSION?' · '+window.ISCREAM_VERSION:'';
+const config={"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":41344376,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const engine=new Engine(config), loading=document.getElementById('loading'), progress=document.getElementById('progress'), message=document.getElementById('message');
+function failure(error){console.error(error);message.textContent=copy["web.failure"];document.getElementById('retry').hidden=false;progress.hidden=true;}
+const missing=Engine.getMissingFeatures({threads:false});
+if(missing.length){failure(new Error(missing.join(', ')));}
+else engine.startGame({onProgress(current,total){if(total>0){const percent=Math.min(100,Math.round(current/total*100));progress.value=percent;message.textContent=percent<100?copy['web.loading'].replace('{percent}',percent):copy["web.opening"];}else{progress.removeAttribute('value');}}}).then(()=>{loading.remove();document.getElementById('canvas').focus();},failure);
+</script>
+</body>
+</html>
+

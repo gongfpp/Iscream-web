@@ -1,0 +1,34 @@
+{
+  "loading-room.png": {
+    "bytes": 2337052,
+    "sha256": "01ca1c25529f53662a52834804250214b903f83f1b40184af947c6fe429dcfd1"
+  },
+  "index.js": {
+    "bytes": 279815,
+    "sha256": "33c94cb3175f3333b82e2a3be5e8e86f77986f0aa2042b1631f6367a4e5bb6ba"
+  },
+  "index.png": {
+    "bytes": 21443,
+    "sha256": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e"
+  },
+  "index.html": {
+    "bytes": 5187,
+    "sha256": "f07de79507b2b208d083f24f5974e85abf5a3638b854509582f8527fd13101c3"
+  },
+  "index.wasm": {
+    "bytes": 39514754,
+    "sha256": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0"
+  },
+  "index.audio.position.worklet.js": {
+    "bytes": 2973,
+    "sha256": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8"
+  },
+  "index.pck": {
+    "bytes": 41344376,
+    "sha256": "437c3a102e7fadbc0171ed2994d779fe73c0fbb01dcf6cdb92084a59994a340d"
+  },
+  "index.audio.worklet.js": {
+    "bytes": 7298,
+    "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3"
+  }
+}
