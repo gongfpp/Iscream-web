@@ -1,0 +1,36 @@
+Audio sources — curated development candidates
+
+Snowfall — Kistol
+https://opengameart.org/content/snowfall
+CC0 https://creativecommons.org/publicdomain/zero/1.0/
+Changes: unchanged recording; constant playback gain configured separately
+
+Contemplation — Joth
+https://opengameart.org/content/contemplation-0
+CC0 https://creativecommons.org/publicdomain/zero/1.0/
+Changes: unchanged recording; constant playback gain configured separately
+
+Ambient Bird Sounds — isaiah658
+https://opengameart.org/content/ambient-bird-sounds
+CC0 https://creativecommons.org/publicdomain/zero/1.0/
+Changes: unchanged recording; constant playback gain configured separately
+
+10 Book Page Flips — StarNinjas
+https://opengameart.org/content/10-book-page-flips
+CC0 https://creativecommons.org/publicdomain/zero/1.0/
+Changes: unchanged recording; constant playback gain configured separately
+
+Door Open, Door Close Set — qubodup
+https://opengameart.org/content/door-open-door-close-set
+CC0 https://creativecommons.org/publicdomain/zero/1.0/
+Changes: unchanged recording; constant playback gain configured separately
+
+Footsteps — GboxMikeFozzy
+https://opengameart.org/content/footsteps-0
+CC0 https://creativecommons.org/publicdomain/zero/1.0/
+Changes: unchanged recording; constant playback gain configured separately
+
+Pencil Sounds — AntumDeluge
+https://opengameart.org/content/pencil-sounds
+CC0 https://creativecommons.org/publicdomain/zero/1.0/
+Changes: unchanged recording; constant playback gain configured separately
